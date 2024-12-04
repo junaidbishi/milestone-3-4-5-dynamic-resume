@@ -1,6 +1,6 @@
 "use strict";
 let myName = localStorage.getItem("name");
-window.addEventListener(`"load"`, () => {
+window.addEventListener("load", () => {
     let desig = localStorage.getItem("desig");
     let phone = localStorage.getItem("phone");
     let email = localStorage.getItem("email");
@@ -26,7 +26,7 @@ window.addEventListener(`"load"`, () => {
     let achiv1 = localStorage.getItem("achiv1");
     let achiv2 = localStorage.getItem("achiv2");
     let achiv3 = localStorage.getItem("achiv3");
-    let picture = localStorage.getItem("pic");
+    let pic = localStorage.getItem("pic");
     let resumeName = document.getElementById('resumeName');
     resumeName.textContent = myName;
     let resdesig = document.getElementById('resdesig');
@@ -80,7 +80,7 @@ window.addEventListener(`"load"`, () => {
     let resachiv3 = document.getElementById('resachiv3');
     resachiv3.textContent = achiv3;
     let resImg = document.getElementById('resImg');
-    resImg.src = picture;
+    resImg.src = pic;
 });
 // printbtn
 let print_btn = document.getElementById('print_btn');

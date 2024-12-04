@@ -1,7 +1,7 @@
 
 let myName=localStorage.getItem("name");
 
-window.addEventListener(`"load"`,()=>{
+window.addEventListener("load",()=>{
 
     
     let desig = localStorage.getItem("desig");
@@ -29,7 +29,7 @@ window.addEventListener(`"load"`,()=>{
     let achiv1 = localStorage.getItem("achiv1");
     let achiv2 = localStorage.getItem("achiv2");
     let achiv3 = localStorage.getItem("achiv3");
-    let picture = localStorage.getItem("pic")
+    let pic = localStorage.getItem("pic")
     
     let resumeName: any= document.getElementById('resumeName')
     resumeName.textContent =myName
@@ -110,7 +110,7 @@ window.addEventListener(`"load"`,()=>{
     resachiv3.textContent = achiv3
 
     let resImg: any= document.getElementById('resImg')
-    resImg.src = picture;
+    resImg.src = pic;
     
 
 })

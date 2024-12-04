@@ -86,7 +86,7 @@ form?.addEventListener('submit', (e) => {
         reader.addEventListener("load", () => {
             let textImg = reader.result;
             console.log(textImg);
-            localStorage.setItem("profile_pic", textImg);
+            localStorage.setItem("pic", textImg);
         });
         reader.readAsDataURL(pic.files[0]);
     }
